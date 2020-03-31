@@ -5,6 +5,7 @@
   text-align: center;
 }
 
+
 /* ユーザー情報下ボタン */
 
 .btn-users-show {
@@ -24,6 +25,26 @@
     text-align: center;
   }
 }
+
+#table-info{
+  td {
+    vertical-align: middle;
+    text-align: bottom;
+  }
+}
+
+.Total{
+  border-top: double #c0c0c0;
+}
+
+.sat{
+  color: blue;
+}
+
+.sun{
+  color: red;
+}
+
 
 /* 入力フォーム */
 
@@ -50,6 +71,26 @@
     vertical-align: middle;
   }  
 }
+
+
+.input-group{
+  float: right;
+  display:inline-flex
+}
+.search-title{
+  margin-left: 908px;
+  margin-bottom: auto;
+}
+
+.input-group-btn{
+  margin-top: 25px;
+  margin-left: -15px;
+}
+
+
+
+
+
 
 /* 基本情報編集モーダルウインドウ */
 
