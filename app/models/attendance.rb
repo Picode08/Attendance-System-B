@@ -22,7 +22,7 @@ class Attendance < ApplicationRecord
   end
   
   def started_at_and_finished_at
-    if worked_on != Date.today
+    if worked_on != Date.current
       errors.add(:finished_at, "が必要です") if started_at.present? && finished_at.blank? 
     end
   end
