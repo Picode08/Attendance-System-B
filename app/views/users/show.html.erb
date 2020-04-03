@@ -2,7 +2,7 @@
 <div>
   <table class="table table-bordered table-condensed user-table" id="table-info">
     <tr>
-      <td><%= link_to "◀️", user_path(date: @first_day.prev_month) , class: "btn btn-success-sm" %>【<%= l(@first_day, format: :middle) %>】勤怠管理表  <%= link_to "▶️", user_path(date: @first_day.next_month), class: "btn btn-succ-sm" %></td>
+      <td><%= link_to "◀️", user_path(date: @first_day.prev_month) , class: "btn btn-primary-sm" %>【<%= l(@first_day, format: :middle) %>】勤怠管理表  <%= link_to "▶️", user_path(date: @first_day.next_month), class: "btn btn-primary-sm" %></td>
       <td>指定勤務時間：<%= format_basic_info(@user.work_time) %></td>
       <td colspan="2">基本時間：<%= format_basic_info(@user.basic_time) %></td>
       <td>初日：<%= l(@first_day, format: :short) %></td>
@@ -19,7 +19,7 @@
 </div>
 
 <div class="btn-users-show">
-  <%= link_to "勤怠を編集", attendances_edit_one_month_user_path(date: @first_day), class: "btn btn-success" %>
+  <%= link_to "勤怠を編集", attendances_edit_one_month_user_path(date: @first_day), class: "btn btn-primary" %>
 </div>
 
 <div>
